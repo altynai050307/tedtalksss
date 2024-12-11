@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+
+	<title>Ted Talks</title>
+</head>
+<body>
+
+
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">TED</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Topics
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <li><a class="dropdown-item" href="#">Art</a></li>
+						  <li><a class="dropdown-item" href="#">Business</a></li>
+						  <li><a class="dropdown-item" href="#">Design</a></li>
+						  <li><a class="dropdown-item" href="#">Education</a></li>
+						  <li><a class="dropdown-item" href="#">Love</a></li>
+						  <li><a class="dropdown-item" href="#">Science</a></li>
+						</ul>
+					  </li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="#">News</a>
+					</li>
+				</ul>
+
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="far fa-user"></i></a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="sign.html">Sign in</a></li>
+							<li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart">
+							<i class="fas fa-bookmark"></i>
+						</a>
+						<div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-xl">
+								<div class="modal-content">
+									<div class="modal-header bg-secondary text-white">
+										<h5 class="modal-title" id="exampleModalLabel">Saved</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<table class="table">
+											<tbody>
+												<tr>
+													<td><img src="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/a413ac54-6a8b-4e67-b0fa-4eaf29fe27fa/alcoholtextless.jpg?u%5Br%5D=2&u%5Bs%5D=0.5&u%5Ba%5D=0.8&u%5Bt%5D=0.03&quality=80&w=1200" alt=""></td>
+													<td><a href="#">How does alcohol make you drunk?</a></td>
+													<td>Health</td>
+													<td><a href="#"><i class="fas fa-paper-plane"></i></a></td>
+												</tr>
+												<tr>
+													<td><img src="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/bae21447-c89f-4687-816f-a3b06c8c90c7/LydiaMachova_2018S-embed.jpg?u%5Br%5D=2&u%5Bs%5D=0.5&u%5Ba%5D=0.8&u%5Bt%5D=0.03&quality=80&w=1200" alt=""></td>
+													<td><a href="#">The secrets of learning a new language</a></td>
+													<td>Education</td>
+													<td><a href="#"><i class="fas fa-paper-plane"></i></a></td>
+												</tr>
+												<tr>
+													<td><img src="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/b2b605ab-2e69-424e-b293-531281ed220d/122_colors.jpg?u%5Br%5D=2&u%5Bs%5D=0.5&u%5Ba%5D=0.8&u%5Bt%5D=0.03&quality=80&w=1200" alt=""></td>
+													<td><a href="#">How we see color</a></td>
+													<td>Brain</td>
+													<td><a href="#"><i class="fas fa-paper-plane"></i></a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary">Save changes</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container mt-4">
+		<ul class="nav nav-tabs" id="tedTabs" role="tablist">
+		  <li class="nav-item" role="presentation">
+			<a class="nav-link active" id="tech-tab" data-bs-toggle="tab" href="#tech" role="tab" aria-controls="tech" aria-selected="true">Technology</a>
+		  </li>
+		  <li class="nav-item" role="presentation">
+			<a class="nav-link" id="education-tab" data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
+		  </li>
+		  <li class="nav-item" role="presentation">
+			<a class="nav-link" id="science-tab" data-bs-toggle="tab" href="#science" role="tab" aria-controls="science" aria-selected="false">Science</a>
+		  </li>
+		  <li class="nav-item" role="presentation">
+			<a class="nav-link" id="art-tab" data-bs-toggle="tab" href="#art" role="tab" aria-controls="art" aria-selected="false">Art</a>
+		  </li>
+		</ul>
+	  
+		<div class="tab-content" id="tedTabsContent">
+		  <div class="tab-pane fade show active" id="tech" role="tabpanel" aria-labelledby="tech-tab">
+			<h4>Technology Talks</h4>
+			<p>Discover the latest breakthroughs in technology, from AI to space exploration <br>
+				Learn how cutting-edge innovations are shaping our future, from self-driving cars to quantum computing</p>
+
+		  </div>
+		  <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+			<h4>Education Talks</h4>
+			<p>Learn how education is evolving, with talks on learning methods and innovations. <br>Explore the impact of technology on education, including online learning platforms and gamified experiences.</p>
+		
+		  </div>
+		  <div class="tab-pane fade" id="science" role="tabpanel" aria-labelledby="science-tab">
+			<h4>Science Talks</h4>
+			<p>Dive into the world of scientific discoveries and breakthroughs. <br>
+				From unraveling the mysteries of the universe to advancing medical research, discover how science impacts our daily lives.
+			</p>
+	
+		  </div>
+		  <div class="tab-pane fade" id="art" role="tabpanel" aria-labelledby="art-tab">
+			<h4>Art Talks</h4>
+			<p>Explore the world of creativity, from visual arts to performance arts.</p>
+			<p>Uncover stories of innovation in the art world, from digital installations to groundbreaking artistic movements.</p>
+		  </div>
+		</div>
+	  </div>
+	  
+	
+	
+	<div class="container-fluid my-carousel">
+		<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="https://nestheprint.com/wp-content/uploads/2019/04/ted-talks.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="https://talkstar-photos.s3.amazonaws.com/uploads/0a95ffba-8cfe-4d9c-8913-736275f78bf9/MatthewWalker_2019-embed.jpg" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/97771daa-eab7-486d-a371-8c3aa37d8bee/MustafaSuleyman_2024-embed.jpg?u%5Br%5D=2&u%5Bs%5D=0.5&u%5Ba%5D=0.8&u%5Bt%5D=0.03&quality=82w=640" class="d-block w-100" alt="...">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div>
+
+	<section class="main-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card">
+						<div class="product-thumb">
+							<a href="https://www.ted.com/talks/judy_grisel_how_does_alcohol_make_you_drunk?subtitle=en" target="_blank"><img src="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/a413ac54-6a8b-4e67-b0fa-4eaf29fe27fa/alcoholtextless.jpg?u%5Br%5D=2&u%5Bs%5D=0.5&u%5Ba%5D=0.8&u%5Bt%5D=0.03&quality=80&w=1200" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="https://www.ted.com/talks/judy_grisel_how_does_alcohol_make_you_drunk?subtitle=en" target="_blank">How does alcohol make you drunk?</a></h4>
+							<p>Ethanol: this molecule, made of little more than a few carbon atoms, is responsible for drunkenness....</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									Judy Grisel <span class="badge bg-danger">TED Talk</span>
+								</div>
+								<div class="product-links">
+									<a href="#"><i class="fas fa-share"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+									<a href="#" data-bs-toggle="modal" data-bs-target="#saveModal"><i class="fas fa-bookmark"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="saveModal" tabindex="-1" aria-labelledby="saveModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="saveModalLabel">Saved!</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+							</div>
+							<div class="modal-body">
+								Successfully saved to your favorites.
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card">
+						<div class="product-thumb">
+							<a href="https://www.ted.com/talks/samantha_agoos_5_tips_to_improve_your_critical_thinking?utm_source=homepage_recommended&utm_content=1&utm_term=video-image" target="_blank"><img src="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/06d8ac18-d691-428d-a572-0930e31905a0/165_critical.jpg?u%5Br%5D=2&u%5Bs%5D=0.5&u%5Ba%5D=0.8&u%5Bt%5D=0.03&quality=80&w=1200" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="https://www.ted.com/talks/samantha_agoos_5_tips_to_improve_your_critical_thinking?utm_source=homepage_recommended&utm_content=1&utm_term=video-image" target="_blank">5 tips to improve your critical thinking</a></h4>
+							<p>Every day, a sea of decisions stretches before us, and it's impossible to make a perfect choice every time...
+								
+							</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									Samantha Agoos <span class="badge bg-danger">TED Talk</span>
+								</div>
+								<div class="product-links">
+									<a href="#"><i class="fas fa-share"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+									<a href="#" data-bs-toggle="modal" data-bs-target="#saveModal"><i class="fas fa-bookmark"></i></a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card">
+						<div class="product-thumb">
+							<a href="https://www.ted.com/talks/nathan_s_jacobs_how_optical_illusions_trick_your_brain?utm_source=homepage_recommended&utm_content=1&utm_term=video-image" target="_blank"><img src="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/6657795b-7844-45ba-8b7c-976ef4a59548/131_optical.jpg?u%5Br%5D=2&u%5Bs%5D=0.5&u%5Ba%5D=0.8&u%5Bt%5D=0.03&quality=80&w=1200" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="https://www.ted.com/talks/nathan_s_jacobs_how_optical_illusions_trick_your_brain?subtitle=en" target="_blanks">How optical illusions trick your brain</a></h4>
+							<p>
+								Optical illusions are images that seem to trick our minds into seeing something different...</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									Nathan S. Jacobs <span class="badge bg-danger">TED Talk</span>
+								</div>
+								<div class="product-links">
+									<a href="#"><i class="fas fa-share"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+									<a href="#" data-bs-toggle="modal" data-bs-target="#saveModal"><i class="fas fa-bookmark"></i></a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card">
+						<div class="product-thumb">
+							<a href="https://www.ted.com/talks/lydia_machova_the_secrets_of_learning_a_new_language?subtitle=en" target="_blank"><img src="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/bae21447-c89f-4687-816f-a3b06c8c90c7/LydiaMachova_2018S-embed.jpg?u%5Br%5D=2&u%5Bs%5D=0.5&u%5Ba%5D=0.8&u%5Bt%5D=0.03&quality=80&w=1200" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="https://www.ted.com/talks/lydia_machova_the_secrets_of_learning_a_new_language?subtitle=en" target="_blank">The secrets of learning a new language</a></h4>
+							<p>Want to learn a new language but feel daunted or unsure where to begin?...</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									Lýdia Machová <span class="badge bg-danger">TED Talk</span>
+								</div>
+								<div class="product-links">
+									<a href="#"><i class="fas fa-share"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+									<a href="#" data-bs-toggle="modal" data-bs-target="#saveModal"><i class="fas fa-bookmark"></i></a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card">
+						<div class="product-thumb">
+							<a href="#"><img src="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/b2b605ab-2e69-424e-b293-531281ed220d/122_colors.jpg?u%5Br%5D=2&u%5Bs%5D=0.5&u%5Ba%5D=0.8&u%5Bt%5D=0.03&quality=80&w=1200"  alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="https://www.ted.com/talks/colm_kelleher_how_we_see_color?subtitle=en" target="_blank">How we see color</a></h4>
+							<p>There are three types of color receptors in your eye: red, green and blue. But how do we see the amazing kaleidoscope of other...</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									Colm Kelleher <span class="badge bg-danger">TED Talk</span>
+								</div>
+								<div class="product-links">
+									<a href="#"><i class="fas fa-share"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+									<a href="#" data-bs-toggle="modal" data-bs-target="#saveModal"><i class="fas fa-bookmark"></i></a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-sm-6 mb-3">
+					<div class="product-card">
+						<div class="product-thumb">
+							<a href="https://www.ted.com/dubbing/lera_boroditsky_how_language_shapes_the_way_we_think?language=en&audio=en" target="_blank"><img src="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/7adc2250-de27-4116-b4ea-6fb4637ca98a/LeraBoroditsky_2017W-embed.jpg?u%5Br%5D=2&u%5Bs%5D=0.5&u%5Ba%5D=0.8&u%5Bt%5D=0.03&quality=80&w=1200" alt=""></a>
+						</div>
+						<div class="product-details">
+							<h4><a href="https://www.ted.com/dubbing/lera_boroditsky_how_language_shapes_the_way_we_think?language=en&audio=en" target="_blank">How language shapes the way we think</a></h4>
+							<p>There are about 7,000 languages spoken around the world -- and they all have different sounds...</p>
+							<div class="product-bottom-details d-flex justify-content-between">
+								<div class="product-price">
+									Lera Boroditsky <span class="badge bg-danger">TED Talk</span>
+								</div>
+								<div class="product-links">
+									<a href="#"><i class="fas fa-share"></i></a>
+									<a href="#"><i class="far fa-heart"></i></a>
+									<a href="#" data-bs-toggle="modal" data-bs-target="#saveModal"><i class="fas fa-bookmark"></i></a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	 
+	
+	
+  
+
+	<nav aria-label="Пример навигации по страницам">
+		<div class="d-flex justify-content-center">
+		  <ul class="pagination">
+			<li class="page-item">
+			  <a class="page-link" href="#" aria-label="Предыдущая">
+				<span aria-hidden="true">&laquo;</span>
+			  </a>
+			</li>
+			<li class="page-item"><a class="page-link" href="#">1</a></li>
+			<li class="page-item"><a class="page-link" href="#">2</a></li>
+			<li class="page-item"><a class="page-link" href="#">3</a></li>
+			<li class="page-item">
+			  <a class="page-link" href="#" aria-label="Следующая">
+				<span aria-hidden="true">&raquo;</span>
+			  </a>
+			</li>
+		  </ul>
+		</div>
+	</nav>
+	
+
+	<div class="container mt-5">
+		<h1 class="text-center mb-4">Explore TED Talks</h1>
+		<div class="row row-cols-1 row-cols-md-3 g-4">
+		  
+		
+			<div class="col">
+				<div class="card h-100">
+				  <img src="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/6b6eb940bceab359ca676a9b486aae475c1df883_2880x1620.jpg?u%5Br%5D=2&u%5Bs%5D=0.5&u%5Ba%5D=0.8&u%5Bt%5D=0.03&quality=80&w=1200" class="card-img-top" alt="Creativity">
+				  <div class="card-body">
+					<h5 class="card-title">The Power of Creativity</h5>
+					<p class="card-text"><strong>Speaker:</strong> Jane Doe</p>
+					<p class="card-text"><strong>Duration:</strong> 18 minutes</p>
+					<button class="btn btn-primary mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+					  More Details
+					</button>
+					<div class="collapse" id="collapse1">
+					  <p>
+						This TED Talk explores the intersection of creativity and problem-solving in a rapidly changing world.
+					  </p>
+					</div>
+					<a href="https://www.ted.com/talks" target="_blank" class="btn btn-danger btn-sm">Watch Video</a>
+				  </div>
+				</div>
+			  </div>
+		
+			 
+			  <div class="col">
+				<div class="card h-100">
+				  <img src="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_133971/ad2c4d52-ae03-4351-865d-baee366a6ae7/BenjaminLewis_2023X-embed.jpg?u%5Br%5D=2&u%5Bs%5D=0.5&u%5Ba%5D=0.8&u%5Bt%5D=0.03&quality=80&w=1200" class="card-img-top" alt="Innovation">
+				  <div class="card-body">
+					<h5 class="card-title">Innovation in the Modern Age</h5>
+					<p class="card-text"><strong>Speaker:</strong> Sarah Lee</p>
+					<p class="card-text"><strong>Duration:</strong> 20 minutes</p>
+					<button class="btn btn-primary mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+					  More Details
+					</button>
+					<div class="collapse" id="collapse2">
+					  <p>
+						Sarah Lee dives into how innovation drives success in modern industries and why adaptability is key.
+					  </p>
+					</div>
+					<a href="https://www.ted.com/talks" target="_blank" class="btn btn-danger btn-sm">Watch Video</a>
+				  </div>
+				</div>
+			  </div>
+		
+			
+			  <div class="col">
+				<div class="card h-100">
+				  <img src="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/d5c8e56a-4ace-43de-ba8b-fd65af013991/LambersFisher_2023X-embed.jpg?u%5Br%5D=2&u%5Bs%5D=0.5&u%5Ba%5D=0.8&u%5Bt%5D=0.03&quality=80&w=1200" class="card-img-top" alt="Motivation">
+				  <div class="card-body">
+					<h5 class="card-title">Overcoming Creative Blocks</h5>
+					<p class="card-text"><strong>Speaker:</strong> John Smith</p>
+					<p class="card-text"><strong>Duration:</strong> 15 minutes</p>
+					<button class="btn btn-primary mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+					  More Details
+					</button>
+					<div class="collapse" id="collapse3">
+					  <p>
+						John Smith shares practical techniques to overcome creative blocks and spark fresh ideas.
+					  </p>
+					</div>
+					<a href="https://www.ted.com/talks" target="_blank" class="btn btn-danger btn-sm">Watch Video</a>
+				  </div>
+				</div>
+			  </div>
+		
+			</div>
+		  </div>
+		
+	  <div class="container my-4">
+		<h2>FAQs</h2>
+		<div class="accordion" id="faqAccordion">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+						What is TED?
+					</button>
+				</h2>
+				<div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+					<div class="accordion-body">TED is a platform for ideas worth spreading. It hosts talks on a wide range of topics including technology, entertainment, design, and more.</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+						How can I participate?
+					</button>
+				</h2>
+				<div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+					<div class="accordion-body">Visit our website and explore upcoming events. You can apply to speak at TED or join as an audience member for various events worldwide.</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+						What is TEDx?
+					</button>
+				</h2>
+				<div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+					<div class="accordion-body">TEDx is an initiative of local, self-organized events that bring people together to share a TED-like experience. These events are organized independently but under TED's guidelines.</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+						Are TED Talks free to watch?
+					</button>
+				</h2>
+				<div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+					<div class="accordion-body">Yes! TED Talks are free to watch on the official TED website and YouTube channel.</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+						How can I watch TED Talks in other languages?
+					</button>
+				</h2>
+				<div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+					<div class="accordion-body">You can select subtitles in multiple languages directly on the TED website or YouTube while watching a talk.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container d-flex justify-content-center align-items-center" style="min-height: 10vh;">
+		<button type="button" class="btn btn-danger" id="liveToastBtn">TEDTalks</button>
+	  </div>
+	  
+	  <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+		<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+		  <div class="toast-header">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCkZZhT_YQRKBBwH1jxSBx4k-LcMTgNhsggA&s" class="rounded me-2" alt="TED Logo" width="20" height="20">
+			<strong class="me-auto">TED Talks</strong>
+			<small>Just now</small>
+			<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+		  </div>
+		  <div class="toast-body">
+			Don’t miss our latest talk: *"The Future of Innovation"* by Jane Doe. Watch now!
+		  </div>
+		</div>
+	  </div>
+	  
+
+
+	  
+
+	<footer>
+		<section class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-6">
+						<h4>Our community</h4>
+						<ul class="list-unstyled">
+							<li><a href="#">TED Speakers</a></li>
+							<li><a href="#">TED Translators</a></li>
+							<li><a href="#">TED Community</a></li>
+							<li><a href="#">TED Fellows</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3 col-6">
+						<h4>Explore</h4>
+						<ul class="list-unstyled">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Topics</a></li>
+							<li><a href="#">News</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3 col-6">
+						<h4>Follow TED</h4>
+						<div class="footer-icons">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-youtube"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	
+
+	
+	</footer>
+	<script>
+	    const toastTrigger = document.getElementById('liveToastBtn');
+    const toastLive = document.getElementById('liveToast');
+
+    if (toastTrigger) {
+      toastTrigger.addEventListener('click', () => {
+        const toast = new bootstrap.Toast(toastLive);
+        toast.show();
+      });
+    }
+
+	  </script>
+	
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+</body>
+</html>
